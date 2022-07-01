@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+div.img_fundo{
+    background-image: url("../img/FundoGagi.png");
+    background-size: cover;
+    background-position: center;
+}
+
+header{
+    height: 14vh;
+}
+
+header > nav > ul{
+    display: flex;
+}
+
+header > nav > ul > li{
+    margin-top: 3em;
+    margin-left: 5em;
+    list-style: none;
+}
+
+header > nav > ul > li > a{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+}
+
+.selecionado{
+    border-bottom: 1px solid;
+}
+
+main > article.page_1{
+    height: 86vh;
+    display: flex;
+}
+
+main > article.page_1 > div.logo{
+    width: 40%;
+}
+
+main > article.page_1 > div.logo > img{
+    width: 30em;
+    display: block;
+    margin: 10em 0 0 4em;
+}
+
+.borda{
+    border-right: 1px solid white;
+    height: 30em;
+    margin: 2.5em 0 0 7em;
+}
+
+main > article.page_1 > form.formulario{
+    width: 25%;
+    display: block;
+    margin: 5em auto 0 auto;
+}
+
+main > article.page_1 > form.formulario input, label{
+    display: block;
+    margin: auto;
+    color: white;
+    background-color: transparent;
+}
+
+main > article.page_1 > form.formulario > input{
+    border: 3px solid white;
+    width: 20em;
+    height: 4em;
+    color: white;
+    text-align: center;
+}
+
+main > article.page_1 > form.formulario > label{
+    display: block;
+    margin: 1em auto 0.75em auto;
+    text-align: center;
+}
+
+main > article.page_1 > form.formulario > a{
+    margin-top: 1.5em;
+    text-align: left;
+    margin-left: 1em;
+    display: block;
+    color: white;
+    font-size: 0.8em;
+}
+
+main > article.page_1 > form.formulario > button{
+    width: 10em;
+    background-image: linear-gradient(to right, #212181, #02084b);
+    border: none;
+    color: white;
+    height: 2.2em;
+    display: block;
+    margin: 1em auto 0 auto;
+}
+
+main > article.page_1 > form.formulario > button > a{
+    color: white;
+    text-decoration: none;
+}

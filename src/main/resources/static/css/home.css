@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+body{
+    overflow: hidden;
+}
+
+div.img_fundo{
+    background-image: url(".././img/FundoGagi.png");
+    background-size: cover;
+    background-position: center;
+}
+
+header{
+    height: 14vh;
+}
+
+header > nav > ul{
+    display: flex;
+}
+
+header > nav > ul > li{
+    margin-top: 3em;
+    margin-left: 5em;
+    list-style: none;
+}
+
+header > nav > ul > li > a{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+}
+
+header > nav > ul > li > a.icone_perfil{
+    border: 2px solid white;
+    border-radius: 80px;
+    padding: 0.8em;
+    margin-left: 40em;
+}
+
+.selecionado{
+    border-bottom: 1px solid white;
+}
+
+main{
+    height: 60vh;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+main > div.borda{
+    border-bottom: 1px solid white;
+    width: 50%;
+    margin: 2em 0;
+}
+
+main > p.sobre{
+    font-size: 1.2rem;
+    text-align: justify;
+    width: 75%;
+}
+
+footer{
+    height: 26vh;
+    color: white;
+    text-align: center;
+    padding-top: 1em;
+}
+
+footer > h2{
+    font-size: 1.5rem;
+}
+
+footer > div.icones{
+    color: white;
+    padding: 0.3em;
+}
+
+footer > div.icones > a{
+    text-decoration: none;
+    color: white;
+} 
+
+footer > div.icones > a > i{
+    color: white;
+    font-size: 2em;
+    padding: 0 0.3em;
+}
+
+footer > span{
+    font-size: 1rem;
+}

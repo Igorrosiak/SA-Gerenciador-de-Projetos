@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../../../img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="../../../bootstrap-5.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../../css/financeiro.css">
+  <title>Editando Gastos</title>
+</head>
+
+<body onchange="inserirResultado()">
+
+  <div class="img_fundo">
+    
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="/pos-login/home">Home</a>
+          </li>
+          <li>
+            <a href="/pos-login/funcionario/list">Funcionários</a>
+          </li>
+          <li>
+            <a href="/pos-login/projeto/list">Projetos</a>
+          </li>
+          <li>
+            <a href="/pos-login/financeiro/list" class="selecionado">Financeiro</a>
+          </li>
+          <li>
+            <a href="#" class="icone_perfil"><i class="fi fi-rr-user icone_perfil"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+
+      <h1 class="edit_add">Editar Gasto</h1>
+
+        <div th:if="${isSaved}" class="alert alert-success" >
+          <h4>Operação realizada com sucesso!</h4>
+        </div>
+
+        <div th:if="${isError}" class="alert alert-danger">
+          <h4>Erro ao tentar salvar os dados!</h4>
+          <label th:text="#{errorMsg}"></label>
+        </div>
+
+        <div id="form">
+          <form th:action="@{/pos-login/financeiro/save}"
+          method="post" class="formulario"
+          th:object="${financeiro}">
+            <div class="form-floating mb-3">
+              <input type="number" th:field="${financeiro.idOperacao}" readonly class="form-control" id="floatingInputId" placeholder="Operação">
+              <label for="floatingInputId">Operação</label>
+            </div>
+            <div class="format_div">
+              <div class="form-floating mb-3 format_label">
+                <input type="number" th:field="${financeiro.valorGasto}" class="form-control" id="floatingInputValorGasto" placeholder="Valor Gasto" required>
+                <label for="floatingInputValorGasto">Valor Gasto</label>
+              </div>
+              <div class="form-floating mb-3 format_label">
+                <input type="number" th:field="${financeiro.valorInserido}" class="form-control" id="floatingInputValorInserido" placeholder="Valor Inserido" required>
+                <label for="floatingInputValorInserido">Valor Inserido</label>
+              </div>
+            </div>
+            <div class="format_div">
+              <div class="form-floating mb-3 format_label">
+                <input type="text" class="form-control" id="floatingInputResultado" required>
+                <label for="floatingInputResultado">Saldo Atual</label>
+              </div>
+              <div class="form-floating mb-3 format_label">
+                <input type="text" th:field="${financeiro.finalidade}" class="form-control" id="floatingInputFinalidade" placeholder="Finalidade" required>
+                <label for="floatingInputFinalidade">Finalidade</label>
+              </div>
+            </div>
+            <div class="form-floating mb-3">
+              <button type="submit" class="btn btn-success">Salvar</button>
+              <button type="button" class="btn btn-secondary"
+                onclick="window.location.href='../list'">
+                Cancelar
+              </button>
+            </div>
+          </form>
+        </div>
+    
+    </main>
+  </div>
+
+  <script src="../../../js/jquery-3.6.0.min.js"></script>
+  <script src="../../../js/popper.min.js"></script>
+  <script src="../../../bootstrap-5.0.0/js/bootstrap.min.js"></script>
+  <script src="../../../js/inserirResultado.js"></script>
+
+</body>
+
+</html>

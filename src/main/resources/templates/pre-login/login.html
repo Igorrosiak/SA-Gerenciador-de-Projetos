@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../bootstrap-5.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <title>Login</title>
+</head>
+<body>
+
+  <div class="img_fundo">
+
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/pre-login/login" class="selecionado">Login</a>
+          </li>
+          <li>
+            <a href="/pre-login/cadastro">Cadastre-se</a>
+          </li>
+          <li>
+            <a href="/pre-login/contato">Contate-nos</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <article class="page_1">
+
+          <div class="logo">
+            <img src="../img/Logo Gagi 2.png" alt="Imagem Logo Gagi WorkSpace">
+          </div>
+
+          <div class="borda"></div>
+
+          <form class="formulario" th:action="@{/pre-login/login}" method="POST">
+
+            <label for="input_login">LOGIN</label>
+            <input type="email" name="username" id="input_login" placeholder="Digite seu E-mail">
+            
+            <label for="input_senha">SENHA</label>
+            <input type="password" name="password" id="input_senha" placeholder="Digite sua Senha">
+            
+            <a href="/pre-login/cadastro">NÃO POSSUI CONTA?</a>
+
+            <button type="submit">ENTRAR</button>
+
+          </form>
+
+      </article>
+    </main>
+    
+  </div>
+    
+  <script src="../js/popper.min.js"></script>
+  <script src="../bootstrap-5.0.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>

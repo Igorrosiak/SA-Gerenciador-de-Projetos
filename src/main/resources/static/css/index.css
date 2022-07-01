@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+    background-color: rgb(0, 0, 0);
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(59, 59, 59);
+    border-radius: 4px;
+    border-right: 2px solid black;
+}
+
+div.img_fundo{
+    background-image: url("../img/FundoGagi.png");
+    background-size: cover;
+    background-position: center;
+}
+
+header{
+    height: 14vh;
+}
+
+header > nav > ul{
+    display: flex;
+}
+
+header > nav > ul > li{
+    margin-top: 3em;
+    margin-left: 5em;
+    list-style: none;
+}
+
+header > nav > ul > li > a{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+}
+
+.selecionado{
+    border-bottom: 1px solid;
+}
+
+main > article.page_1{
+    height: 86vh;
+}
+
+main > article.page_1 > h1{
+    padding-top: 2em;
+    margin-left: 3em;
+    color: white;
+}
+
+main > article.page_1 > img{
+    width: 40em;
+    display: block;
+    margin: 2em 0 1.5em 5.5em;
+}
+
+main > article.page_1 > button{
+    margin-top: 2em;
+    margin-left: 7.3em;
+    padding: 1em;
+    color: white;
+    border: 2px solid white;
+    background-color: transparent;
+    height: 3em;
+    width: 8em;
+    line-height: 0.7em;
+}
+
+section.scroll{
+    background-image: url("../img/FundoSemFumaca.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+section.scroll > article{
+    height: 65%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5em;
+}
+
+section.scroll > article > div.card_1{
+    height: 100%;
+    width: 48%;
+    border: 1px solid white;
+    padding: 1em;
+    color: white;
+    padding: 2em;
+    border-radius: 10px;
+}
+
+section.scroll > article > div.card_1 > p{
+    text-align: justify;
+    font-size: 1.5rem;
+}
+
+section.scroll > article > div.card_2{
+    height: 100%;
+    width: 45%;
+    border: 1px solid white;
+    padding: 1em;
+    color: white;
+    padding: 2em;
+    border-radius: 10px;
+}
+
+section.scroll > article > div.card_2 > div.texto{
+    height: 65%;
+}
+
+section.scroll > article > div.card_2 > div.texto > p{
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+section.scroll > article > div.card_2 > div.texto > h2{
+    font-size: 1.7rem;
+}
+
+section.scroll > article > div.card_2 > div.imagens{
+    display: flex;
+    width: 100%;
+    height: 35%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section.scroll > article > div.card_2 > div.imagens > img{
+    width: 30%;    
+}
+
+section.scroll > footer{
+    padding-top: 5em;
+    color: white;
+    text-align: center;
+}
+
+ section.scroll > footer > h2{
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 15px 0 15px 0;
+}
+
+ section.scroll > footer > div.icones{
+
+    color: white;
+    padding: 0.3em;
+}
+
+ section.scroll > footer > div.icones > a{
+    text-decoration: none;
+    color: white;
+} 
+
+ section.scroll > footer > div.icones > a > i{
+    color: white;
+    font-size: 1.8em;
+    padding: 0 0.3em;
+}
+
+ section.scroll > footer > span{
+    font-size: 0.9rem;
+}
+
